@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "lib": ["es2017", "dom", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": false,
+    "strictPropertyInitialization": false,
+    /* 必须开启以下两项 */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* 建议开启，避免装饰器与类属性初始化冲突 */
+    "useDefineForClassFields": false,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "inlineSources": true,
+    "rootDir": "./",
+    "declaration": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+  "include": ["**/*.ts"]
+}

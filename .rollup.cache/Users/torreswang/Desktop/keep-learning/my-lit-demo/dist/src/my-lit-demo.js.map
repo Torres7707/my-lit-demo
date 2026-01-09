@@ -1,0 +1,1 @@
+{"version":3,"file":"my-lit-demo.js","sourceRoot":"","sources":["../../src/my-lit-demo.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAE3C,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,aAAa,EAAE,SAAS,CAAC,CAAC","sourcesContent":["import { MyLitDemo } from './MyLitDemo.js';\n\nwindow.customElements.define('my-lit-demo', MyLitDemo);\n"]}
