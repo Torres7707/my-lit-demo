@@ -51,7 +51,7 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
         return null;
       },
       load(id) {
-        if (id.endsWith("/__mousetrap_bundled__.js")) {
+        if (id.replace(/\\/g, '/').endsWith("/__mousetrap_bundled__.js")) {
           const mousetrapPath = fileURLToPath(
             new URL("./node_modules/mousetrap/mousetrap.js", import.meta.url)
           );
@@ -63,7 +63,7 @@ export default /** @type {import('@web/dev-server').DevServerConfig} */ ({
           `;
           return content;
         }
-        if (id.endsWith("/__dagre_bundled__.js")) {
+        if (id.replace(/\\/g, '/').endsWith("/__dagre_bundled__.js")) {
           const dagrePath = fileURLToPath(
             new URL("./node_modules/dagre/dist/dagre.js", import.meta.url)
           );
